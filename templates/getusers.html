@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users {{ jenis }}</title>
+</head>
+<body>
+    <h1>Users {{ jenis }}</h1>
+    <form method="POST">
+        <label>User Name</label>
+        <input type="text" name="username" required>
+        <label>Password</label>
+        <input type="password" name="password" required>
+        <button type="submit">Simpan</button>
+    </form>
+    <p>User: {{ getuser }}</p>
+</body>
+</html>

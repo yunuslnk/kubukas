@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Kubukas</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <p>Sisa Saldo: {{ saldo }}</p>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('pemasukan') }}">Pencatatan Pemasukan</a></li>
+            <li><a href="{{ url_for('pengeluaran') }}">Pencatatan Pengeluaran</a></li>
+            <li><a href="{{ url_for('saldo') }}">Lihat Saldo</a></li>
+            <li><a href="{{ url_for('hutang') }}">Hutang</a></li>
+            <li><a href="{{ url_for('users') }}">User</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="text-center">Halo, Dunia!</h1>
+        <p class="lead">Ini adalah halaman dengan Bootstrap.</p>
+        <button class="btn btn-primary">Tombol Bootstrap</button>
+    </div>
+</body>
+</html>
